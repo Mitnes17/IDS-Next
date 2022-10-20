@@ -2,13 +2,16 @@ import styled from 'styled-components';
 import { colors, media } from '../../styles/variables';
 
 export const Container = styled.div`
+  max-width: 376px;
   display: flex;
   flex-direction: column;
   font-weight: normal;
   padding: 51px 12px 0px 12px;
-  margin-bottom: 46px;
+  margin: 0 auto 46px;
 
   @media ${media.tablet} {
+    margin: auto;
+    max-width: 696px;
     flex-direction: row;
     justify-content: center;
     padding: 45px 36px 0px 36px;

@@ -8,6 +8,7 @@ import { Welcome } from '../components/Welcome/Welcome';
 const Home: NextPage = () => {
   return (
     <div>
+      <Header></Header>
       <Welcome></Welcome>
     </div>
   );

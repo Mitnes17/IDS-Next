@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { colors, media } from '../../styles/variables';
 
 export const Container = styled.div`
+  max-width: 376px;
   margin: auto;
   display: flex;
   justify-content: space-between;

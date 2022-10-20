@@ -1,11 +1,16 @@
 import next from 'next';
 import * as Styles from './styled';
+import Image from 'next/image';
+import Logo from '../../public/img/logo.png';
 
 export const Header = () => {
   return (
     <Styles.Container>
       <Styles.Logo>
-        <Styles.Img />
+        <Image
+          src={Logo}
+          alt='logo'
+        />
       </Styles.Logo>
       <Styles.Burger>
         <Styles.Bar></Styles.Bar>
