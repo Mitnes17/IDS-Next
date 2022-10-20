@@ -1,9 +1,7 @@
-html,
-body {
+* {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Ideal Sans Book';
 }
 
 a {
@@ -11,8 +9,22 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: 'Ideal Sans Book';
+  src: url('../fonts/IdealSans-BookItalic.woff2') format('woff2'),
+    url('../fonts/IdealSans-BookItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ideal Sans Book';
+  src: url('../fonts/IdealSans-Book.woff2') format('woff2'),
+    url('../fonts/IdealSans-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +32,7 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: black;
+    background: white;
   }
 }
