@@ -47,7 +47,7 @@ export const Container = styled.div`
     margin-top: 71px;
     max-width: 1214px;
     padding-right: 36px;
-    padding-left: 140px;
+    padding-left: 85px;
   }
 `;
 

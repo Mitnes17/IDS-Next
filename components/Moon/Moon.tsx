@@ -11,19 +11,21 @@ export const Moon = () => {
 
   //image condition render
   useEffect(() => {
-    let foo = () => {
+    let resize = () => {
       if (ref.current != null) {
         const width = document.body.getBoundingClientRect().width;
 
         width > 767 && width < 1680 ? setTablet(true) : setTablet(false);
       }
     };
-    foo();
-    const resize = () => {
-      foo();
+
+    resize();
+
+    const resizeEvent = () => {
+      resize();
     };
 
-    window.addEventListener('resize', resize);
+    window.addEventListener('resize', resizeEvent);
   }, [ref]);
 
   return (

@@ -23,7 +23,7 @@ export const Container = styled.section`
     max-width: 1215px;
     margin: 0 auto 120px;
     column-gap: 71px;
-    padding: 68px 36px 0px 141px;
+    padding: 68px 36px 0px 85px;
   }
 `;
 

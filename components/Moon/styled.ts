@@ -6,8 +6,7 @@ export const Section = styled.div`
   }
   @media (${media.pc}) {
     position: relative;
-    padding-left: 36px;
-    padding-right: 36px;
+    padding-right: 50px;
     margin-bottom: 80px;
   }
 `;
@@ -24,7 +23,7 @@ export const Container = styled.div`
     max-width: 1314px;
     margin: auto;
     justify-content: end;
-    padding-right: 36px;
+    padding-left: 40px;
   }
 `;
 
