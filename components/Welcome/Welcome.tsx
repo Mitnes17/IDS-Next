@@ -1,25 +1,25 @@
 import next from 'next';
-import * as Styles from './styled';
+import * as S from './styled';
 import welcomeImg from '../../public/img/4000_4_08.png';
 import Image from 'next/image';
 
 export const Welcome = () => {
   return (
-    <Styles.Container>
-      <Styles.Left>
-        <Styles.H1>Welcome to the insert some lorem copy here</Styles.H1>
-        <Styles.H3>Vision, Learning, Collaboration.</Styles.H3>
-        <Styles.P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Styles.P>
-      </Styles.Left>
-      <Styles.Right>
-        <Styles.ImgWrap>
+    <S.Container>
+      <S.Left>
+        <S.H1>Welcome to the insert some lorem copy here</S.H1>
+        <S.H3>Vision, Learning, Collaboration.</S.H3>
+        <S.P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</S.P>
+      </S.Left>
+      <S.Right>
+        <S.ImgWrap>
           <Image
             src={welcomeImg}
             alt=''
             priority
           />
-        </Styles.ImgWrap>
-      </Styles.Right>
-    </Styles.Container>
+        </S.ImgWrap>
+      </S.Right>
+    </S.Container>
   );
 };

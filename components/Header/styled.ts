@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { colors, media } from '../../styles/variables';
 
 export const Container = styled.div`
-  max-width: 376px;
+  /* max-width: 296px; */
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -11,9 +11,11 @@ export const Container = styled.div`
 
   @media ${media.tablet} {
     padding: 9.5px 30px 9.5px 36px;
+    max-width: 696px;
   }
 
   @media ${media.pc} {
+    max-width: 1215px;
     padding: 7.5px 20px 7.5px 12px;
   }
 `;

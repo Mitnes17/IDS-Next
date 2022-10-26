@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { colors, media } from '../../styles/variables';
 
-export const Container = styled.div`
-  max-width: 376px;
+export const Container = styled.section`
+  /* max-width: 296px; */
   display: flex;
   flex-direction: column;
   font-weight: normal;
@@ -15,6 +15,7 @@ export const Container = styled.div`
     flex-direction: row;
     justify-content: center;
     padding: 45px 36px 0px 36px;
+    margin-bottom: 95px;
     column-gap: 40px;
   }
 
@@ -101,7 +102,7 @@ export const ImgWrap = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+
   /* padding-left: 12px; */
   /* padding-right: 12px; */
 
@@ -111,6 +112,7 @@ export const ImgWrap = styled.div`
     height: auto;
     min-width: 320px;
     min-height: 320px;
+    /* justify-content: center; */
   }
 
   @media ${media.pc} {
