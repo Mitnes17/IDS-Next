@@ -2,9 +2,12 @@ import styled from 'styled-components';
 import { colors, media } from '../../styles/variables';
 
 export const Section = styled.section`
+  margin-bottom: 50px;
   @media (${media.tablet}) {
+    margin-bottom: 43px;
   }
   @media (${media.pc}) {
+    margin-bottom: 87px;
   }
 `;
 
@@ -13,6 +16,7 @@ export const Container = styled.div`
     display: grid;
     column-gap: 0px;
     grid-template-columns: auto 696px auto;
+    margin-bottom: 50px;
   }
   @media (${media.pc}) {
     display: grid;
@@ -24,13 +28,9 @@ export const Container = styled.div`
 
 export const Main = styled.div`
   @media (${media.tablet}) {
-    /* margin: auto; */
     display: flex;
-    /* margin-bottom: 50px; */
-    /* max-width: 696px; */
   }
   @media (${media.pc}) {
-    margin-bottom: 0px;
   }
 `;
 
