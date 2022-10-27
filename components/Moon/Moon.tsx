@@ -29,7 +29,7 @@ export const Moon = () => {
   }, [ref]);
 
   return (
-    <S.Section ref={ref}>
+    <S.Section {...{ ref }}>
       <S.Container>
         <S.Main>
           <S.TextBlock>

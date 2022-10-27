@@ -9,6 +9,8 @@ import { Footer } from '../components/Footer/Footer';
 import { Knowledge } from '../components/Knowledge/Knowledge';
 import { Moon } from '../components/Moon/Moon';
 import { CircleBlock } from '../components/CircleBlock/CircleBlock';
+import { ReadMore } from '../components/ReadMore/ReadMore';
+import { Voldemort } from '../components/Voldemort/Voldemort';
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +21,7 @@ const Home: NextPage = () => {
         <Knowledge />
         <Moon />
         <CircleBlock />
+        <Voldemort />
       </main>
       <Footer />
     </div>
