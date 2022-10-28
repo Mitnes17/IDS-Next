@@ -8,9 +8,9 @@ export const Link = styled.a<StyleProps>`
   line-height: 21px;
   letter-spacing: 1px;
   text-align: left;
-  cursor: pointer;
-  text-transform: uppercase;
   color: ${({ $color }) => ($color ? $color : colors.black)};
+  text-transform: uppercase;
+  cursor: pointer;
 
   @media (${media.pc}) {
     font-size: 16px;

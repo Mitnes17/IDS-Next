@@ -2,21 +2,19 @@ import styled from 'styled-components';
 import { colors, media } from '../../styles/variables';
 
 export const Container = styled.section`
-  /* max-width: 296px; */
   display: flex;
   flex-direction: column;
-  font-weight: normal;
   padding: 104px 12px 0px 12px;
   margin: 0 auto 46px;
+  font-weight: normal;
 
   @media ${media.tablet} {
-    margin: auto;
-    max-width: 696px;
     flex-direction: row;
     justify-content: center;
-    padding: 107px 36px 0px 36px;
-    margin-bottom: 95px;
+    max-width: 696px;
     column-gap: 40px;
+    margin: 0 auto 95px;
+    padding: 107px 36px 0px 36px;
   }
 
   @media ${media.pc} {
@@ -99,17 +97,17 @@ export const P = styled.p`
 `;
 
 export const ImgWrap = styled.div`
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
+  width: 100%;
+  height: 100%;
 
   @media ${media.tablet} {
-    padding: 0;
     width: 100%;
-    height: auto;
     min-width: 320px;
     min-height: 320px;
+    height: auto;
+    padding: 0;
   }
 
   @media ${media.pc} {

@@ -1,9 +1,8 @@
 import React, { FC } from 'react';
 import * as S from './styled';
-import { Arrow } from '../Arrow/Arrow';
+import { Arrow } from '../Arrow/index';
 import { colors } from '../../styles/variables';
-import { LinkArrow } from '../LinkArrow/LinkArrow';
-import { StyleProps } from './Footer.d';
+import { LinkArrow } from '../LinkArrow/index';
 
 export const Footer = () => {
   return (

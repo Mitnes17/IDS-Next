@@ -5,14 +5,14 @@ export const Section = styled.section`
   margin-top: 35px;
 
   @media (${media.tablet}) {
-    margin-top: 70px;
     position: relative;
+    margin-top: 70px;
   }
 
   @media (${media.pc}) {
+    position: relative;
     margin-top: 120px;
     margin-bottom: 100px;
-    position: relative;
   }
 `;
 
@@ -22,19 +22,19 @@ export const Wrap = styled.div`
   margin-bottom: 50px;
 
   @media (${media.tablet}) {
-    max-width: 696px;
     flex-direction: row;
     margin: auto;
+    max-width: 696px;
 
     &::before {
       content: '';
-      background: ${colors.grayCircle};
-      height: 100%;
-      width: 70%;
       position: absolute;
-      z-index: -2;
       left: 0;
       top: 0;
+      height: 100%;
+      width: 70%;
+      z-index: -2;
+      background: ${colors.grayCircle};
     }
   }
 
@@ -45,13 +45,13 @@ export const Wrap = styled.div`
 
     &::before {
       content: '';
-      background: ${colors.grayCircle};
-      height: 100%;
-      width: 50%;
       position: absolute;
-      z-index: -2;
-      left: 0;
       top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      z-index: -2;
+      background: ${colors.grayCircle};
     }
   }
 `;
@@ -94,8 +94,7 @@ export const P = styled.p`
   letter-spacing: 0px;
   text-align: left;
   margin-bottom: 40px;
-  @media (${media.tablet}) {
-  }
+
   @media (${media.pc}) {
     font-size: 18px;
     font-style: normal;

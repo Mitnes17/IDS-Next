@@ -1,6 +1,6 @@
 import { FC, useEffect, useState, useRef } from 'react';
 import * as S from './styled';
-import { Props } from './Circle.d';
+import { Props } from './Circle';
 import Image from 'next/image';
 import SvgCenter from '../../public/img/svg/field.svg';
 

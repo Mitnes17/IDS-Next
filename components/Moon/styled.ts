@@ -6,8 +6,7 @@ export const Section = styled.div`
   }
   @media (${media.pc}) {
     position: relative;
-    padding-right: 50px;
-    margin-bottom: 80px;
+    padding: 0 50px 80px 0;
   }
 `;
 
@@ -21,8 +20,8 @@ export const Container = styled.div`
 
   @media (${media.pc}) {
     max-width: 1314px;
-    margin: auto;
     justify-content: end;
+    margin: auto;
     padding-left: 40px;
   }
 `;
@@ -32,31 +31,30 @@ export const Main = styled.div`
   background: linear-gradient(to right, ${colors.cyanGray} 50%, ${colors.white} 50%);
 
   @media (${media.tablet}) {
-    max-width: 696px;
-    margin: auto;
-    background: none;
     display: flex;
     flex-direction: row;
-    padding: 0px 36px 40px 36px;
-
     justify-content: end;
     position: relative;
+    max-width: 696px;
+    padding: 0px 36px 40px 36px;
+    margin: auto;
+    background: none;
 
     &::before {
       content: ' ';
       position: absolute;
       left: -500px;
+      width: 100%;
+      height: 80%;
       align-self: center;
       z-index: -1;
-      height: 80%;
-      width: 100%;
       background-color: ${colors.cyanGray};
     }
   }
 
   @media (${media.pc}) {
-    margin-bottom: 100px;
     max-width: 1360px;
+    margin-bottom: 100px;
     padding: 0;
   }
 `;
@@ -67,24 +65,24 @@ export const TextBlock = styled.div`
   color: ${colors.white};
 
   @media (${media.tablet}) {
+    flex: 1;
     align-self: center;
+    width: 100%;
+    height: 100%;
     padding: 60px 60px 60px 60px;
     margin-right: -313px;
     z-index: 10;
-    width: 100%;
-    height: 100%;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0px;
     text-align: left;
-    flex: 1;
   }
 
   @media (${media.pc}) {
+    flex: 1;
     padding: 100px 100px 100px 100px;
     margin-right: -301px;
-    flex: 1;
   }
 `;
 export const H2 = styled.h2`
@@ -95,9 +93,6 @@ export const H2 = styled.h2`
   letter-spacing: 0px;
   text-align: left;
   padding-bottom: 20px;
-
-  @media (${media.tablet}) {
-  }
 
   @media (${media.pc}) {
     font-style: normal;
@@ -110,12 +105,7 @@ export const H2 = styled.h2`
   }
 `;
 
-export const Wrap = styled.div`
-  @media (${media.tablet}) {
-  }
-  @media (${media.pc}) {
-  }
-`;
+export const Wrap = styled.div``;
 
 export const P = styled.p`
   font-size: 16px;
@@ -123,9 +113,6 @@ export const P = styled.p`
   line-height: 24px;
   letter-spacing: 0px;
   text-align: left;
-
-  @media (${media.tablet}) {
-  }
 
   @media (${media.pc}) {
     min-width: 540px;
@@ -158,39 +145,38 @@ export const LearnMore = styled.div`
   margin-bottom: 50px;
 
   @media (${media.tablet}) {
-    max-width: 676px;
-    margin: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 65px;
+    max-width: 676px;
     column-gap: 55px;
+    margin: auto;
+    padding-left: 65px;
   }
 
   @media (${media.pc}) {
-    max-width: 1214px;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    max-width: 1214px;
     column-gap: 281px;
     padding-left: 0;
   }
 `;
 
 export const About = styled.p`
+  margin: 30px 12px 40px 12px;
+  text-align: left;
   font-size: 18px;
   font-style: italic;
   font-weight: 400;
   line-height: 27px;
   letter-spacing: 0px;
-  text-align: left;
-  margin: 30px 12px 40px 12px;
 
   @media (${media.tablet}) {
-    margin: 0;
-    /* flex: 2; */
     max-width: 400px;
+    margin: 0;
   }
 
   @media (${media.pc}) {
@@ -207,7 +193,4 @@ export const About = styled.p`
 
 export const ButtonWrap = styled.div`
   margin: 0 0 0 12px;
-
-  @media (${media.tablet}) {
-  }
 `;

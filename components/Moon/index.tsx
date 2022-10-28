@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import * as S from './styled';
-import { Button } from '../Button/Button';
+import { Button } from '../Button/index';
 import MoonImgTablet from '../../public/img/Bitmap768.png';
 import MoonImg from '../../public/img/Bitmap.png';
 

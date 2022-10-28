@@ -19,18 +19,15 @@ export const Circle = styled.div`
 `;
 
 export const Grand = styled.div<StyleProps>`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   width: 285px;
   height: 285px;
-  border-radius: 50%;
   border: 1.5px solid ${({ $color }) => ($color ? $color : colors.pink)};
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  border-radius: 50%;
   transition: border-color 0.5s linear;
-
-  @media (${media.tablet}) {
-  }
 
   @media (${media.pc}) {
     width: 480px;
@@ -38,20 +35,15 @@ export const Grand = styled.div<StyleProps>`
   }
 `;
 
-export const Small = styled.div`
-  @media (${media.tablet}) {
-  }
-  @media (${media.pc}) {
-  }
-`;
+export const Small = styled.div``;
 
 export const Rotate = styled.div`
-  border-radius: 50%;
-  top: calc(50% - 50px);
-  left: calc(50% - 50px);
   position: absolute;
   width: 100px;
   height: 100px;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  border-radius: 50%;
   animation: rotate 60s linear infinite;
 
   @keyframes rotate {
@@ -63,70 +55,59 @@ export const Rotate = styled.div`
       transform: rotate(360deg);
     }
   }
-
-  @media (${media.tablet}) {
-  }
-  @media (${media.pc}) {
-  }
 `;
 
 export const Dot = styled.div<StyleProps>`
-  margin: 0;
   position: absolute;
-  top: -101px;
-  left: calc(50% - 8px);
   width: 8px;
   height: 8px;
-  border-radius: 50%;
+  top: -101px;
+  left: calc(50% - 8px);
+  margin: 0;
   border: 4px solid ${({ $color }) => ($color ? $color : colors.pink)};
+  border-radius: 50%;
   background-color: ${colors.white};
   transition: border-color 0.5s linear;
-
-  @media (${media.tablet}) {
-  }
 
   @media (${media.pc}) {
     width: 15px;
     height: 15px;
-    border-width: 6px;
     top: -203px;
+    border-width: 6px;
   }
 `;
 
 export const Wrap = styled.div<StyleProps>`
-  width: 155px;
-  height: 155px;
-  border-radius: 50%;
-  border: 1px solid ${({ $color }) => ($color ? $color : colors.pink)};
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: start;
-  transition: border-color 0.5s linear;
+  align-items: center;
+  width: 155px;
+  height: 155px;
   background-color: white;
+  border: 1px solid ${({ $color }) => ($color ? $color : colors.pink)};
+  border-radius: 50%;
+  transition: border-color 0.5s linear;
   @media (${media.tablet}) {
   }
 
   @media (${media.pc}) {
+    justify-content: center;
     width: 250px;
     height: 250px;
-    justify-content: center;
   }
 `;
 
 export const Figure = styled.figure<StyleProps>`
-  margin-top: 38px;
-  width: 49px;
-  height: 49px;
-  background-color: ${({ $color }) => ($color ? $color : colors.pink)};
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 49px;
+  height: 49px;
+  margin-top: 38px;
+  background-color: ${({ $color }) => ($color ? $color : colors.pink)};
+  border-radius: 50%;
   transition: background-color 0.5s linear;
-
-  @media (${media.tablet}) {
-  }
 
   @media (${media.pc}) {
     width: 80px;
@@ -137,9 +118,6 @@ export const Figure = styled.figure<StyleProps>`
 export const ImageWrap = styled.figure`
   width: 25px;
   height: 25px;
-
-  @media (${media.tablet}) {
-  }
 
   @media (${media.pc}) {
     width: 42px;
@@ -164,11 +142,6 @@ export const Text = styled.h6`
   line-height: 27px;
   letter-spacing: 0px;
   text-align: center;
-
-  @media (${media.tablet}) {
-  }
-  @media (${media.pc}) {
-  }
 `;
 
 export const Count = styled.h6`
@@ -177,9 +150,4 @@ export const Count = styled.h6`
   line-height: 27px;
   letter-spacing: 0px;
   text-align: center;
-
-  @media (${media.tablet}) {
-  }
-  @media (${media.pc}) {
-  }
 `;

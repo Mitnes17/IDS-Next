@@ -4,16 +4,18 @@ import { colors, media } from '../../styles/variables';
 export const Section = styled.section`
   margin-bottom: 50px;
   background: linear-gradient(to right, ${colors.gray} 50%, ${colors.white} 50%);
+
   @media (${media.tablet}) {
     background: none;
+
     &::before {
       content: '';
       display: inline-block;
       position: absolute;
-      background-color: ${colors.gray};
       width: 100%;
       height: 489px;
       z-index: -2;
+      background-color: ${colors.gray};
     }
   }
 
@@ -26,40 +28,35 @@ export const Section = styled.section`
 `;
 
 export const Container = styled.div`
-  /* max-width: 308px; */
-  margin: auto;
   display: flex;
   flex-direction: column;
   padding: 50px 0px 50px 12px;
+  margin: auto;
 
   @media (${media.tablet}) {
-    flex-direction: row;
-    padding-top: 0px;
-    padding-left: 36px;
-    padding-right: 36px;
-    padding-bottom: 0px;
-    margin-bottom: 40px;
-    align-items: flex-start;
     max-width: 696px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0 36px;
+    margin-bottom: 40px;
   }
 
   @media (${media.pc}) {
-    margin-top: 71px;
     max-width: 1214px;
-    padding-right: 36px;
-    padding-left: 85px;
+    margin-top: 71px;
+    padding: 0 36px 0 85px;
   }
 `;
 
 export const Left = styled.div`
-  background-color: ${colors.deepBlue};
   flex: 1;
-  color: ${colors.white};
   padding: 50px 20px 86px 20px;
+  color: ${colors.white};
+  background-color: ${colors.deepBlue};
 
   @media (${media.tablet}) {
-    padding: 70px 40px 257px 40px;
     flex: 1;
+    padding: 70px 40px 257px 40px;
   }
 
   @media (${media.pc}) {
@@ -75,9 +72,6 @@ export const H3 = styled.h3`
   text-align: left;
   padding-bottom: 30px;
   text-transform: uppercase;
-
-  @media (${media.tablet}) {
-  }
 
   @media (${media.pc}) {
     font-size: 18px;
@@ -130,26 +124,30 @@ export const ImgWrap = styled.div`
 export const Text = styled.div`
   margin-top: -30px;
   z-index: 4;
+
   @media (${media.tablet}) {
     margin-top: -100px;
   }
+
   @media (${media.pc}) {
     margin-top: -300px;
   }
 `;
 
 export const TextContainer = styled.div`
-  color: ${colors.white};
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0px;
-  text-align: left;
   padding: 50px 20px;
+  text-align: left;
+  color: ${colors.white};
   background-color: ${colors.blue};
+
   @media (${media.tablet}) {
     padding: 50px;
   }
+
   @media (${media.pc}) {
     font-family: Helvetica;
     font-size: 18px;

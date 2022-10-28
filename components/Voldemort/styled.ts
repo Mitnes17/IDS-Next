@@ -3,9 +3,11 @@ import { colors, media } from '../../styles/variables';
 
 export const Section = styled.section`
   margin-bottom: 50px;
+
   @media (${media.tablet}) {
     margin-bottom: 43px;
   }
+
   @media (${media.pc}) {
     margin-bottom: 87px;
   }
@@ -14,15 +16,16 @@ export const Section = styled.section`
 export const Container = styled.div`
   @media (${media.tablet}) {
     display: grid;
-    column-gap: 0px;
     grid-template-columns: auto 696px auto;
+    column-gap: 0px;
     margin-bottom: 50px;
   }
+
   @media (${media.pc}) {
     display: grid;
     grid-template-columns: auto 1214px auto;
-    margin-bottom: 100px;
     column-gap: 0px;
+    margin-bottom: 100px;
   }
 `;
 
@@ -30,6 +33,7 @@ export const Main = styled.div`
   @media (${media.tablet}) {
     display: flex;
   }
+
   @media (${media.pc}) {
   }
 `;
@@ -50,11 +54,6 @@ export const Voldemort = styled.div`
   display: flex;
   flex-direction: column;
   width: calc(100% - 12px);
-
-  @media (${media.tablet}) {
-  }
-  @media (${media.pc}) {
-  }
 `;
 
 export const Figure = styled.figure`
@@ -65,24 +64,26 @@ export const Figure = styled.figure`
   &::before {
     content: '';
     position: absolute;
+    top: 0;
+    left: 0;
     width: 12px;
     height: 100%;
     background: ${colors.blue};
-    left: 0;
-    top: 0;
     border-top: 1px solid ${colors.white};
   }
 
   @media (${media.tablet}) {
     padding-left: 36px;
     padding: 0;
+
     &::before {
       display: none;
-      /* width: 36px; */
     }
   }
+
   @media (${media.pc}) {
     padding: 0;
+
     &::before {
       display: none;
     }
@@ -97,6 +98,7 @@ export const ImageWrap = styled.figure`
     width: 308px;
     height: 433px;
   }
+
   @media (${media.pc}) {
     width: 444px;
     height: 624px;
@@ -104,33 +106,36 @@ export const ImageWrap = styled.figure`
 `;
 
 export const Text = styled.div`
-  margin-top: -75px;
   position: relative;
-  padding-left: 12px;
   width: 100%;
+  margin-top: -75px;
+  padding-left: 12px;
 
   &::before {
     content: '';
-    width: 12px;
-    background-color: ${colors.white};
-    height: 100%;
     position: absolute;
     left: 0;
     top: 0;
+    width: 12px;
+    height: 100%;
+    background-color: ${colors.white};
     border-bottom: 1px solid ${colors.white};
   }
 
   @media (${media.tablet}) {
     padding: 0;
+
     &::before {
       display: inline-block;
       width: 36px;
       display: none;
     }
   }
+
   @media (${media.pc}) {
     padding-left: 0;
     margin-top: -110px;
+
     &::before {
       display: none;
     }
@@ -138,14 +143,14 @@ export const Text = styled.div`
 `;
 
 export const TextWrap = styled.div`
-  color: ${colors.white};
   padding: 50px 88px 30px 20px;
+  color: ${colors.white};
   background: ${colors.green};
 
   @media (${media.tablet}) {
     padding: 50px 46px 243px 46px;
-    /* width: calc(100% - 104px); */
   }
+
   @media (${media.pc}) {
     padding: 41px 65px 59px 65px;
   }
@@ -160,8 +165,6 @@ export const H3 = styled.h3`
   text-align: left;
   padding-bottom: 10px;
 
-  @media (${media.tablet}) {
-  }
   @media (${media.pc}) {
     font-family: Helvetica;
     font-size: 24px;
@@ -205,23 +208,25 @@ export const FishText = styled.div`
   margin-bottom: 50px;
 
   @media (${media.tablet}) {
-    padding: 70px 60px;
-    align-self: flex-end;
-    margin: 0;
     position: relative;
+    align-self: flex-end;
+    padding: 70px 60px;
+    margin: 0;
+
     &::after {
+      display: none;
       content: '';
       position: absolute;
-      bottom: 0;
       right: -36px;
+      bottom: 0;
       width: 100%;
-      background: ${colors.darkOrange};
       height: 71%;
-      display: none;
+      background: ${colors.darkOrange};
     }
   }
   @media (${media.pc}) {
     padding: 120px 114px 93px 115px;
+
     &::after {
       display: none;
     }
@@ -239,6 +244,7 @@ export const FishH2 = styled.h2`
   @media (${media.tablet}) {
     margin-bottom: 17px;
   }
+
   @media (${media.pc}) {
     font-family: Helvetica;
     font-size: 50px;
@@ -264,6 +270,7 @@ export const FishH3 = styled.h3`
   @media (${media.tablet}) {
     margin-bottom: 33px;
   }
+
   @media (${media.pc}) {
     font-family: Helvetica;
     font-size: 22px;
@@ -283,8 +290,6 @@ export const FishP = styled.p`
   letter-spacing: 0px;
   text-align: left;
 
-  @media (${media.tablet}) {
-  }
   @media (${media.pc}) {
     font-family: Helvetica;
     font-size: 18px;
@@ -300,6 +305,7 @@ export const Red = styled.div`
     padding-right: 36px;
     background: linear-gradient(to top, ${colors.darkOrange} 523px, ${colors.white} 175px);
   }
+
   @media (${media.pc}) {
     padding-right: 36px;
     background: linear-gradient(to top, ${colors.darkOrange} 423px, ${colors.white} 275px);

@@ -3,15 +3,15 @@ import { colors, media } from '../../styles/variables';
 import { StyleProps } from './MenuItem';
 
 export const Item = styled.a<StyleProps>`
-  padding: 50px 30px 0px 12px;
-  color: ${({ $color }) => ($color ? $color : colors.black)};
-  text-transform: uppercase;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0px;
-  text-align: left;
+  padding: 50px 30px 0px 12px;
   align-self: flex-start;
+  text-align: left;
+  color: ${({ $color }) => ($color ? $color : colors.black)};
+  text-transform: uppercase;
 
   &:first-child {
     padding: 30px 30px 0px 12px;

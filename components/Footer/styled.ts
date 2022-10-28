@@ -1,29 +1,27 @@
 import styled from 'styled-components';
 import { colors, media } from '../../styles/variables';
 import { StyleProps } from './Footer.d';
-// export const Link = styled.a<StyleProps>``;
 
 export const Footer = styled.footer`
-  background-color: ${colors.deepBlue};
   color: ${colors.white};
+  background-color: ${colors.deepBlue};
 `;
 
 export const Container = styled.div`
   margin: auto;
-  /* max-width: 296px; */
   padding: 50px 12px;
 
   @media (${media.tablet}) {
-    padding: 70px 36px;
     max-width: 696px;
+    padding: 70px 36px;
   }
 
   @media (${media.pc}) {
+    display: flex;
     max-width: 1110px;
+    column-gap: 125px;
     padding: 120px 0px;
     margin: auto;
-    display: flex;
-    column-gap: 125px;
   }
 `;
 
@@ -115,9 +113,6 @@ export const TextR = styled.p<StyleProps>`
   text-align: left;
   margin-bottom: 65px;
 
-  @media (${media.tablet}) {
-  }
-
   @media (${media.pc}) {
     margin-bottom: 100px;
     font-size: 18px;
@@ -135,8 +130,6 @@ export const H3 = styled.h3`
   letter-spacing: 1.13px;
   text-align: left;
 
-  @media (${media.tablet}) {
-  }
   @media (${media.pc}) {
     font-size: 18px;
     font-weight: 400;

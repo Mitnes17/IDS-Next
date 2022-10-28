@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from './styled';
 import Image from 'next/image';
-import { ReadMore } from '../ReadMore/ReadMore';
+import { ReadMore } from '../ReadMore/index';
 import Fishing from '../../public/img/fishing.png';
 
 export const Voldemort = () => {

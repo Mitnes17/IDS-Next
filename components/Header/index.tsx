@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Logo from '../../public/img/logo.png';
 import { MenuItem } from '../MenuItem';
 import { data } from '../MenuItem/mockData';
-import { Button } from '../Button/Button';
+import { Button } from '../Button/index';
 
 export const Header = () => {
   const ref = useRef<HTMLDivElement>(null);

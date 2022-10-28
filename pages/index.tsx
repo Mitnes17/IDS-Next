@@ -1,16 +1,14 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 
-import { Header } from '../components/Header/Header';
-import { Welcome } from '../components/Welcome/Welcome';
-import { Footer } from '../components/Footer/Footer';
-import { Knowledge } from '../components/Knowledge/Knowledge';
-import { Moon } from '../components/Moon/Moon';
-import { CircleBlock } from '../components/CircleBlock/CircleBlock';
-import { ReadMore } from '../components/ReadMore/ReadMore';
-import { Voldemort } from '../components/Voldemort/Voldemort';
+import { Header } from '../components/Header/index';
+import { Welcome } from '../components/Welcome/index';
+import { Footer } from '../components/Footer/index';
+import { Knowledge } from '../components/Knowledge/index';
+import { Moon } from '../components/Moon/index';
+import { CircleBlock } from '../components/CircleBlock/index';
+import { Voldemort } from '../components/Voldemort/index';
+import { Slider } from '../components/Slider/index';
 
 const Home: NextPage = () => {
   return (
@@ -22,6 +20,7 @@ const Home: NextPage = () => {
         <Moon />
         <CircleBlock />
         <Voldemort />
+        <Slider />
       </main>
       <Footer />
     </div>

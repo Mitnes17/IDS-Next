@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import * as S from './styled';
 import { colors, media } from '../../styles/variables';
-import { StyleProps } from '../Arrow/Arrow.d';
+import { Props } from './Arrow';
 
-export const Arrow: FC<StyleProps> = ({ $color }) => {
+export const Arrow: FC<Props> = ({ $color }) => {
   return <S.Arrow $color={$color}></S.Arrow>;
 };

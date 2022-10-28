@@ -2,23 +2,23 @@ import styled from 'styled-components';
 import { colors, media } from '../../styles/variables';
 
 export const Header = styled.header`
-  background-color: ${colors.white};
   flex: 1;
-  border-bottom: 1px solid ${colors.gray};
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 20;
+  background-color: ${colors.white};
+  border-bottom: 1px solid ${colors.gray};
   transition: 0.3s;
 `;
 
 export const Container = styled.div`
-  margin: auto;
-  max-width: 1680px;
   display: flex;
   flex-direction: row;
+  max-width: 1680px;
   padding: 20.5px 60px 20.5px 47px;
+  margin: auto;
 
   @media (max-width: 1679px) {
     position: relative;
@@ -45,26 +45,26 @@ export const Logo = styled.a`
 `;
 
 export const Bar = styled.span`
-  pointer-events: auto;
-  width: 30px;
-  height: 3px;
+  position: absolute;
   top: calc(50% - 1.5px);
   left: 0;
-  position: absolute;
+  width: 30px;
+  height: 3px;
   background: ${colors.pink};
   border-radius: 2px;
   opacity: 1;
   transition: 0.3s ease-in-out;
+  pointer-events: auto;
 
   @media (${media.tablet}) {
     display: block;
-    height: 4px;
-    width: 100%;
-    opacity: 1;
+    top: calc(50% - 2px);
     left: 0;
+    width: 100%;
+    height: 4px;
+    opacity: 1;
     transform: rotate(0deg);
     transition: 0.3s ease-in-out;
-    top: calc(50% - 2px);
   }
 
   @media (${media.pc}) {
@@ -77,19 +77,19 @@ export const Burger = styled.div`
   display: none;
 
   @media (max-width: 1679px) {
-    position: absolute;
     display: block;
+    position: absolute;
     top: 23px;
     right: 36px;
     width: 40px;
     height: 15px;
+    z-index: 15;
     padding-bottom: 10px;
     border: none;
     background: none;
     transform: rotate(0deg);
     transition: 0.5s ease-in-out;
     cursor: pointer;
-    z-index: 15;
 
     &:focus {
       outline: none;
@@ -104,12 +104,12 @@ export const Burger = styled.div`
     &::after {
       display: block;
       position: absolute;
-      height: 4px;
+      left: 0;
       width: 100%;
+      height: 4px;
+      opacity: 1;
       background: ${colors.pink};
       border-radius: 2px;
-      opacity: 1;
-      left: 0;
       transform: rotate(0deg);
       transition: 0.3s ease-in-out;
     }
@@ -145,11 +145,11 @@ export const Burger = styled.div`
   }
 
   @media (max-width: 767px) {
+    top: 19px;
+    right: 20px;
     width: 30px;
     height: 12px;
     padding-bottom: 5px;
-    right: 20px;
-    top: 19px;
 
     &::before,
     &::after {
@@ -173,52 +173,6 @@ export const Burger = styled.div`
   }
 `;
 
-// export const Nav = styled.div`
-//   @media (min-width: 1680px) {
-//     flex: 1;
-//     display: flex;
-//     align-items: center;
-//     flex-direction: row;
-//     background: none;
-//   }
-
-//   @media (max-width: 1679px) {
-//     padding-top: 50px;
-//     position: fixed;
-//     top: 0;
-//     right: -100%;
-//     width: 100%;
-//     height: 100%;
-//     background-color: ${colors.white};
-//     display: flex;
-//     flex-direction: column;
-//     font-size: 30px;
-//     align-items: left;
-//     overflow: auto;
-//     transition: right 0.3s ease-in-out;
-//     z-index: 1;
-
-//     &.active {
-//       right: 0;
-//     }
-
-//     &.active::before {
-//       content: ' ';
-//       position: fixed;
-//       top: 0;
-//       left: 0;
-//       width: 100%;
-//       height: 72px;
-//       background-color: ${colors.white};
-//     }
-//   }
-//   @media (max-width: 767px) {
-//     &:before {
-//       height: 52px;
-//     }
-//   }
-// `;
-
 export const MenuList = styled.nav`
   text-transform: uppercase;
 
@@ -230,30 +184,30 @@ export const MenuList = styled.nav`
   }
 
   @media (max-width: 767px) {
-    margin-bottom: 50px;
-    font-size: 26px;
     display: flex;
     flex-direction: column;
     text-align: left;
+    margin-bottom: 50px;
+    font-size: 26px;
   }
 
   @media (min-width: 1680px) {
-    align-items: center;
     display: flex;
-    text-align: center;
+    align-items: center;
     column-gap: 120px;
     margin-right: 190px;
+    text-align: center;
   }
 `;
 
 export const NavWrap = styled.div`
   position: fixed;
   top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
   overflow: auto;
   margin-top: 54px;
-  right: -100%;
-  height: 100%;
-  width: 100%;
   background-color: white;
   transition: 0.5s;
 
@@ -266,13 +220,13 @@ export const NavWrap = styled.div`
   }
 
   @media (${media.pc}) {
-    margin-top: 0;
-    position: static;
-    background-color: none;
     display: flex;
     justify-content: end;
+    position: static;
     height: auto;
     align-items: center;
+    margin-top: 0;
+    background-color: none;
   }
 `;
 

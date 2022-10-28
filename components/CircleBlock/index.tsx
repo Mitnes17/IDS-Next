@@ -1,8 +1,8 @@
 import { FC, useEffect, useState, useRef } from 'react';
 import * as S from './styled';
-import { Circle } from '../Circle/Circle';
+import { Circle } from '../Circle/index';
 import { circle } from './mokData';
-import { LinkArrow } from '../LinkArrow/LinkArrow';
+import { LinkArrow } from '../LinkArrow/index';
 import { colors } from '../../styles/variables';
 
 export const CircleBlock = () => {
