@@ -77,7 +77,6 @@ export const ImageWrap = styled.figure`
     width: 335px;
     height: 188px;
     z-index: 3;
-    opacity: 1;
     animation: opacity 1s linear;
 
     @keyframes opacity {

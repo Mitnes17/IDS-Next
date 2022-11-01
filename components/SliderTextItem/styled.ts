@@ -5,7 +5,7 @@ export const SliderTextItem = styled.div`
   padding: 0 0 50px 0;
 
   @media (${media.tablet}) {
-    max-width: 296px;
+    width: 296px;
     padding: 0;
     animation: opacity 1s linear;
 

@@ -7,9 +7,6 @@ export const SliderItem = styled.div`
   @media (${media.tablet}) {
     margin: auto;
   }
-
-  @media (${media.pc}) {
-  }
 `;
 
 export const SliderWrap = styled.div`
@@ -52,3 +49,5 @@ export const BtnWrap = styled.div`
     margin: auto;
   }
 `;
+
+export const SWrap = styled.div``;

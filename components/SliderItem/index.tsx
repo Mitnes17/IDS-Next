@@ -46,7 +46,32 @@ export const SliderItem = () => {
           ))}
       </S.BtnWrap>
 
-      {!state && (
+      <S.SWrap>
+        {!state &&
+          data.map(
+            ({ id, src, h2, h3, h4, p, href, img }) =>
+              slide == id && (
+                <S.SliderWrap key={id}>
+                  <SliderTextItem
+                    // key={data[slide].id}
+                    src={src}
+                    h2={h2}
+                    h3={h3}
+                    h4={h4}
+                    p={p}
+                    href={href}
+                  />
+                  <SliderImgItem img={img} />
+                </S.SliderWrap>
+              )
+          )}
+      </S.SWrap>
+    </S.SliderItem>
+  );
+};
+
+{
+  /* {!state && (
         <S.SliderWrap key={slide}>
           <SliderTextItem
             // key={data[slide].id}
@@ -60,7 +85,5 @@ export const SliderItem = () => {
 
           <SliderImgItem img={data[slide].img} />
         </S.SliderWrap>
-      )}
-    </S.SliderItem>
-  );
-};
+      )} */
+}
