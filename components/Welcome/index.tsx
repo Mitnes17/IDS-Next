@@ -1,7 +1,6 @@
-import next from 'next';
-import * as S from './styled';
 import welcomeImg from '../../public/img/4000_4_08.png';
 import Image from 'next/image';
+import * as S from './styled';
 
 export const Welcome = () => {
   return (

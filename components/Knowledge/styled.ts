@@ -21,6 +21,7 @@ export const Section = styled.section`
 
   @media (${media.pc}) {
     margin-bottom: 120px;
+
     &::before {
       height: 540px;
     }
@@ -38,7 +39,7 @@ export const Container = styled.div`
     flex-direction: row;
     align-items: flex-start;
     padding: 0 36px;
-    margin-bottom: 40px;
+    margin-bottom: 65px;
   }
 
   @media (${media.pc}) {

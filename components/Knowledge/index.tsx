@@ -1,8 +1,7 @@
 import React, { useRef, useEffect, FC } from 'react';
-import * as S from './styled';
-import { colors } from '../../styles/variables';
 import Image from 'next/image';
 import knowledgeImg from '../../public/img/seamless.png';
+import * as S from './styled';
 
 export const Knowledge = () => {
   const ref = useRef<HTMLDivElement>(null);

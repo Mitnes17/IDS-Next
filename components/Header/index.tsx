@@ -1,5 +1,5 @@
 import next from 'next';
-import { useEffect, useState, useRef, useLayoutEffect } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import * as S from './styled';
 import Image from 'next/image';
 import Logo from '../../public/img/logo.png';
@@ -11,8 +11,6 @@ export const Header = () => {
   const ref = useRef<HTMLDivElement>(null);
 
   const [active, setActive] = useState(false);
-
-  const [height, setHeight] = useState(0);
 
   const burger = () => {
     setActive((prev) => !prev);

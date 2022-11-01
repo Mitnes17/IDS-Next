@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react';
+import { FC } from 'react';
 import * as S from './styled';
 import { Props } from './MenuItem';
 

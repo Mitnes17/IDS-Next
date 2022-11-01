@@ -1,9 +1,9 @@
-import { FC, useEffect, useState, useRef } from 'react';
-import * as S from './styled';
+import { useEffect, useState } from 'react';
 import { Circle } from '../Circle/index';
 import { circle } from './mokData';
 import { LinkArrow } from '../LinkArrow/index';
 import { colors } from '../../styles/variables';
+import * as S from './styled';
 
 export const CircleBlock = () => {
   const [id, setId] = useState(0);

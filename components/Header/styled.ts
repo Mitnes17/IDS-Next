@@ -2,11 +2,11 @@ import styled from 'styled-components';
 import { colors, media } from '../../styles/variables';
 
 export const Header = styled.header`
-  flex: 1;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  flex: 1;
   z-index: 20;
   background-color: ${colors.white};
   border-bottom: 1px solid ${colors.gray};
@@ -206,7 +206,7 @@ export const NavWrap = styled.div`
   right: -100%;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow: scroll;
   margin-top: 54px;
   background-color: white;
   transition: 0.5s;
@@ -231,12 +231,12 @@ export const NavWrap = styled.div`
 `;
 
 export const Button = styled.div`
-  margin-left: 12px;
+  margin: 0 0 100px 12px;
 
   @media (${media.tablet}) {
-    margin-left: 36px;
+    margin: 0 0 100px 36px;
   }
   @media (${media.pc}) {
-    margin-left: 0;
+    margin: 0;
   }
 `;

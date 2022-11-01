@@ -6,10 +6,10 @@ export const Arrow = styled.i<StyleProps>`
   box-sizing: border-box;
   display: inline-block;
   position: relative;
-  color: ${({ $color }) => ($color ? $color : colors.black)};
-  margin-left: 40px;
   width: 10px;
   height: 10px;
+  margin-left: 40px;
+  color: ${({ $color }) => ($color ? $color : colors.black)};
   border-width: 3px 3px 0 0;
   border-style: solid;
   transform: rotate(45deg);

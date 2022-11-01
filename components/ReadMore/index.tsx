@@ -1,6 +1,6 @@
 import { useState, FC } from 'react';
-import * as S from './styled';
 import { Props } from './ReadMore';
+import * as S from './styled';
 
 export const ReadMore: FC<Props> = ({ text, textHide }) => {
   const [toggle, setToggle] = useState('');

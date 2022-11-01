@@ -1,8 +1,8 @@
 import React from 'react';
-import * as S from './styled';
 import Image from 'next/image';
 import { ReadMore } from '../ReadMore/index';
 import Fishing from '../../public/img/fishing.png';
+import * as S from './styled';
 
 export const Voldemort = () => {
   return (

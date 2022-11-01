@@ -1,5 +1,4 @@
 import type { NextPage } from 'next';
-import styles from '../styles/Home.module.css';
 
 import { Header } from '../components/Header/index';
 import { Welcome } from '../components/Welcome/index';
@@ -17,10 +16,10 @@ const Home: NextPage = () => {
       <main>
         <Welcome />
         <Knowledge />
-        <Moon />
-        <CircleBlock />
         <Voldemort />
         <Slider />
+        <CircleBlock />
+        <Moon />
       </main>
       <Footer />
     </div>

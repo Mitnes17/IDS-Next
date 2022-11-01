@@ -1,8 +1,8 @@
 import { FC, useEffect, useState, useRef } from 'react';
-import * as S from './styled';
 import { Props } from './Circle';
 import Image from 'next/image';
 import SvgCenter from '../../public/img/svg/field.svg';
+import * as S from './styled';
 
 export const Circle: FC<Props> = ({ $color, text, count }) => {
   return (

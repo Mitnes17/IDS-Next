@@ -4,10 +4,10 @@ import { Props } from './Button.d';
 
 export const Link = styled.a`
   display: inline-block;
-  font-size: 14px;
-  padding: 14px 27px 13px 24px;
-  text-align: left;
   align-self: flex-start;
+  text-align: left;
+  padding: 14px 27px 13px 24px;
+  font-size: 14px;
   color: ${colors.white};
   background-color: ${colors.pink};
   text-decoration: none;

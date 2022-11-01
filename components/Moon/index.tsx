@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
-import * as S from './styled';
 import { Button } from '../Button/index';
 import MoonImgTablet from '../../public/img/Bitmap768.png';
 import MoonImg from '../../public/img/Bitmap.png';
+import * as S from './styled';
 
 export const Moon = () => {
   const ref = useRef(null);
@@ -50,7 +50,6 @@ export const Moon = () => {
               src={tablet ? MoonImgTablet : MoonImg}
               alt=''
               layout={!tablet ? 'intrinsic' : 'fill'}
-              // layout='fill'
             />
           </S.ImageWrap>
         </S.Main>

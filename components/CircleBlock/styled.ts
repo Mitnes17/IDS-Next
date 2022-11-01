@@ -6,6 +6,7 @@ export const Section = styled.section`
 
   @media (${media.tablet}) {
     position: relative;
+    margin: 70px 0px 70px 0px;
     margin-top: 70px;
   }
 
