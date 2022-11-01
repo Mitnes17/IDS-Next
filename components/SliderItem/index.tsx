@@ -47,7 +47,7 @@ export const SliderItem = () => {
       </S.BtnWrap>
 
       {!state && (
-        <S.SliderWrap key={data[slide].id}>
+        <S.SliderWrap key={slide}>
           <SliderTextItem
             // key={data[slide].id}
             src={data[slide].src}

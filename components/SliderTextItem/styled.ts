@@ -7,7 +7,7 @@ export const SliderTextItem = styled.div`
   @media (${media.tablet}) {
     max-width: 296px;
     padding: 0;
-    animation: opacity 0.5s linear;
+    animation: opacity 1s linear;
 
     @keyframes opacity {
       from {
