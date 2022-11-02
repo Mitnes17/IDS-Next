@@ -1,10 +1,16 @@
 import styled from 'styled-components';
 import { media, colors } from '../../styles/variables';
 import imageUrl from '../../public/img/space-back.png';
+import { StyleProps } from './SliderImgItem';
 
-export const SliderImgBlock = styled.div`
+export const SliderImgBlock = styled.div<StyleProps>`
   @media (${media.tablet}) {
+    border-bottom: 6px solid;
+    border-color: ${({ $borderColor }) => $borderColor};
     margin-right: 36px;
+  }
+  @media (${media.pc}) {
+    border-width: 7px;
   }
 `;
 

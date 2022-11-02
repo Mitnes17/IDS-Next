@@ -4,11 +4,11 @@ import { Props } from './SliderImgItem.d';
 import { useWidth } from '../../hooks/useWidth';
 import * as S from './styled';
 
-export const SliderImgItem: FC<Props> = ({ img }) => {
+export const SliderImgItem: FC<Props> = ({ img, $borderColor }) => {
   const state = useWidth(1680);
 
   return (
-    <S.SliderImgBlock>
+    <S.SliderImgBlock {...{ $borderColor }}>
       <S.Container>
         <S.ImageWrap>
           <Image

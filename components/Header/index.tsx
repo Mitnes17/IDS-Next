@@ -1,16 +1,19 @@
-import next from 'next';
-import { useEffect, useState, useRef } from 'react';
-import * as S from './styled';
+import { useEffect, useState, FC } from 'react';
 import Image from 'next/image';
 import Logo from '../../public/img/logo.png';
 import { MenuItem } from '../MenuItem';
 import { data } from '../MenuItem/mockData';
 import { Button } from '../Button/index';
+import useElementSize from '../../hooks/useElementSize';
+import { Props } from './Header';
+import * as S from './styled';
 
-export const Header = () => {
-  const ref = useRef<HTMLDivElement>(null);
-
+export const Header: FC<Props> = ({ onPadding }) => {
   const [active, setActive] = useState(false);
+
+  const [ref, { height }] = useElementSize();
+
+  onPadding(height);
 
   const burger = () => {
     setActive((prev) => !prev);

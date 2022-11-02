@@ -8,7 +8,7 @@ import * as S from './styled';
 
 export const SliderTextItem: FC<Props> = ({ h2, h3, h4, p, src, href, img }) => {
   const state = useWidth(768);
-  console.log(state);
+
   return (
     <S.Wrap>
       <S.SliderTextItem>

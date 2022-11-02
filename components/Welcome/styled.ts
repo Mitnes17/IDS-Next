@@ -4,7 +4,7 @@ import { colors, media } from '../../styles/variables';
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
-  padding: 104px 12px 0px 12px;
+  padding: 51px 12px 0px 12px;
   margin: 0 auto 46px;
   font-weight: normal;
 
@@ -14,14 +14,14 @@ export const Container = styled.section`
     max-width: 696px;
     column-gap: 40px;
     margin: 0 auto 95px;
-    padding: 107px 36px 0px 36px;
+    padding: 45px 36px 0px 36px;
   }
 
   @media ${media.pc} {
     max-width: 1215px;
     margin: 0 auto 120px;
     column-gap: 71px;
-    padding: 182px 0px 0px 50px;
+    padding: 52px 0px 0px 50px;
   }
 `;
 

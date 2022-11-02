@@ -10,6 +10,8 @@ import Image3 from '../../public/img/4000_4_08.png';
 import Image4 from '../../public/img/Bitmap.png';
 import Image5 from '../../public/img/friends.png';
 
+import { colors } from '../../styles/variables';
+
 export const data = [
   {
     id: 0,
@@ -21,6 +23,7 @@ export const data = [
     href: '#',
     img: Image1,
     imgId: 0,
+    $borderColor: '#009fd6',
   },
   {
     id: 1,
@@ -32,6 +35,7 @@ export const data = [
     href: '#',
     img: Image2,
     imgId: 1,
+    $borderColor: '#f1ae2a',
   },
   {
     id: 2,
@@ -43,6 +47,7 @@ export const data = [
     href: '#',
     img: Image3,
     imgId: 2,
+    $borderColor: '#d84e30',
   },
   {
     id: 3,
@@ -54,6 +59,7 @@ export const data = [
     href: '#',
     img: Image4,
     imgId: 3,
+    $borderColor: '#8ec33c',
   },
   {
     id: 4,
@@ -65,6 +71,7 @@ export const data = [
     href: '#',
     img: Image5,
     imgId: 4,
+    $borderColor: '#c8da2d',
   },
 ];
 

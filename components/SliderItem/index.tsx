@@ -48,7 +48,7 @@ export const SliderItem = () => {
 
       {!state &&
         data.map(
-          ({ id, src, h2, h3, h4, p, href, img }) =>
+          ({ id, src, h2, h3, h4, p, href, img, $borderColor }) =>
             slide === id && (
               <S.SliderWrap key={id}>
                 <SliderTextItem
@@ -60,7 +60,10 @@ export const SliderItem = () => {
                   href={href}
                   img={img}
                 />
-                <SliderImgItem img={img} />
+                <SliderImgItem
+                  img={img}
+                  $borderColor={$borderColor}
+                />
               </S.SliderWrap>
             )
         )}

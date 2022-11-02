@@ -1,26 +1,20 @@
 import type { NextPage } from 'next';
-
+import { useState } from 'react';
 import { Header } from '../components/Header/index';
-import { Welcome } from '../components/Welcome/index';
 import { Footer } from '../components/Footer/index';
-import { Knowledge } from '../components/Knowledge/index';
-import { Moon } from '../components/Moon/index';
-import { CircleBlock } from '../components/CircleBlock/index';
-import { Voldemort } from '../components/Voldemort/index';
-import { Slider } from '../components/Slider/index';
+import { Main } from '../components/Main/index';
+import React from 'react';
 
 const Home: NextPage = () => {
+  const [height, setHeight] = useState();
+  const onPadding = (childHeight: any) => {
+    setHeight((height) => childHeight);
+  };
+
   return (
     <div>
-      <Header />
-      <main>
-        <Welcome />
-        <Knowledge />
-        <Voldemort />
-        <Slider />
-        <CircleBlock />
-        <Moon />
-      </main>
+      <Header onPadding={onPadding} />
+      <Main $padding={height} />
       <Footer />
     </div>
   );

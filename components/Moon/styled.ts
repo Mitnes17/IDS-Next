@@ -7,7 +7,6 @@ export const Section = styled.div`
   @media (${media.pc}) {
     position: relative;
     margin-bottom: 80px;
-    /* padding: 0 50px 80px 0; */
   }
 `;
 
