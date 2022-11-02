@@ -5,3 +5,5 @@ import { Props } from './Arrow';
 export const Arrow: FC<Props> = ({ $color }) => {
   return <S.Arrow $color={$color}></S.Arrow>;
 };
+
+//
