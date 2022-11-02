@@ -75,16 +75,3 @@ export const dataBtn = [
   { id: 3, text: '2010 - 2014' },
   { id: 4, text: '2015 - 2021' },
 ];
-
-// export const dataImg = [
-//   { src: Image1, id: 0 },
-//   { src: Image2, id: 1 },
-//   { src: Image3, id: 2 },
-//   { src: Image4, id: 3 },
-//   { src: Image5, id: 4 },
-// ];
-
-// export const dataBack = {
-//   src: Back,
-//   src768: Back768,
-// };

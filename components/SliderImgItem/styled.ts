@@ -1,30 +1,47 @@
 import styled from 'styled-components';
 import { media, colors } from '../../styles/variables';
+import imageUrl from '../../public/img/space-back.png';
 
 export const SliderImgBlock = styled.div`
+  @media (${media.tablet}) {
+    margin-right: 36px;
+  }
+`;
+
+export const Container = styled.div`
   @media (${media.tablet}) {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 280px;
     height: 312px;
-    margin-right: 36px;
+    background-image: url(${imageUrl.src});
   }
-
   @media (${media.pc}) {
-    margin-right: 0;
+    width: 540px;
+    height: 525px;
   }
 `;
 
-export const BackgroundImg = styled.figure`
+export const ImageWrap = styled.figure`
   @media (${media.tablet}) {
-    display: flex;
-    justify-content: center;
-    position: relative;
+    position: absolute;
+    width: 335px;
+    height: 188px;
+    z-index: 3;
+    width: 335px;
+
+    padding-top: 10px;
+    z-index: 2;
+    background: #e1e3e8;
+    border-radius: 3px;
 
     &::after {
       content: '';
       position: absolute;
+      top: 2%;
+      left: 6%;
       width: 2px;
       height: 2px;
       background: blue;
@@ -34,65 +51,36 @@ export const BackgroundImg = styled.figure`
       z-index: 2;
       box-shadow: 0 0 0 2px #fbb316, 0 11px 0 2px ${colors.darkOrange},
         0 -11px 0 2px ${colors.green};
-      top: calc(50% - 100px);
-      left: -5%;
     }
 
-    &::before {
-      content: '';
-      position: absolute;
-      top: calc(50% - 105px);
-      width: 335px;
-      height: 188px;
-      padding-top: 10px;
-      z-index: 2;
-      background: #e1e3e8;
-      border-radius: 3px;
+    img {
+      object-fit: cover;
+      animation: opacity 1s linear;
+
+      @keyframes opacity {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
     }
   }
+
   @media (${media.pc}) {
-    &::before {
-      top: calc(10% - 10px);
-      width: 691px;
-      height: 399px;
-      border-radius: 6px;
-    }
+    padding-top: 20px;
+    background: #e1e3e8;
+    border-radius: 6px;
+    width: 691px;
+    height: 389px;
 
     &::after {
       width: 5px;
       height: 5px;
-      top: 10%;
-      left: -8%;
-      z-index: 3;
       box-shadow: 0 0 0 2px #fbb316, 0 15px 0 2px ${colors.darkOrange},
         0 -15px 0 2px ${colors.green};
     }
-  }
-`;
-
-export const ImageWrap = styled.figure`
-  @media (${media.tablet}) {
-    position: absolute;
-    top: calc(50% - 95px);
-    width: 335px;
-    height: 188px;
-    z-index: 3;
-    animation: opacity 1s linear;
-
-    @keyframes opacity {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 1;
-      }
-    }
-  }
-
-  @media (${media.pc}) {
-    width: 691px;
-    height: 389px;
-    top: -13%;
   }
 `;

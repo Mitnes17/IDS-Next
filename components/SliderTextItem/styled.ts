@@ -1,6 +1,23 @@
 import styled from 'styled-components';
 import { media, colors } from '../../styles/variables';
 
+export const Wrap = styled.div`
+  @media (${media.tablet}) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 696px;
+    margin: auto;
+  }
+
+  @media (${media.pc}) {
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1218px;
+    margin: 70px auto 50px;
+  }
+`;
+
 export const SliderTextItem = styled.div`
   padding: 0 0 50px 0;
 
@@ -21,7 +38,7 @@ export const SliderTextItem = styled.div`
   }
 
   @media (${media.pc}) {
-    max-width: 440px;
+    width: 440px;
   }
 `;
 

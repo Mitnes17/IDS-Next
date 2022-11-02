@@ -49,5 +49,3 @@ export const BtnWrap = styled.div`
     margin: auto;
   }
 `;
-
-export const SWrap = styled.div``;

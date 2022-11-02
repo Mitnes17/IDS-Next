@@ -7,4 +7,5 @@ export type Props = StyleProps & {
   h4: string;
   p: string;
   href: string;
+  img?: any;
 };

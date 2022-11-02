@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { data, dataBtn } from './mockData';
 import { SliderTextItem } from '../SliderTextItem/index';
 import { SliderImgItem } from '../SliderImgItem/index';
@@ -15,7 +15,7 @@ export const SliderItem = () => {
       {data
         .filter((item, index) => index < 2)
         .map(
-          ({ id, src, h2, h3, h4, p, href, img }) =>
+          ({ id, src, h2, h3, h4, p, href }) =>
             state && (
               <S.SliderWrap key={id}>
                 <SliderBtn
@@ -38,7 +38,7 @@ export const SliderItem = () => {
         {!state &&
           dataBtn.map(({ id, text }) => (
             <SliderBtn
-              onClick={() => setSlide((prev) => id)}
+              onClick={() => setSlide(id)}
               text={text}
               key={id}
               className={id === slide ? 'isActive' : ''}
@@ -46,44 +46,24 @@ export const SliderItem = () => {
           ))}
       </S.BtnWrap>
 
-      <S.SWrap>
-        {!state &&
-          data.map(
-            ({ id, src, h2, h3, h4, p, href, img }) =>
-              slide == id && (
-                <S.SliderWrap key={id}>
-                  <SliderTextItem
-                    // key={data[slide].id}
-                    src={src}
-                    h2={h2}
-                    h3={h3}
-                    h4={h4}
-                    p={p}
-                    href={href}
-                  />
-                  <SliderImgItem img={img} />
-                </S.SliderWrap>
-              )
-          )}
-      </S.SWrap>
+      {!state &&
+        data.map(
+          ({ id, src, h2, h3, h4, p, href, img }) =>
+            slide === id && (
+              <S.SliderWrap key={id}>
+                <SliderTextItem
+                  src={src}
+                  h2={h2}
+                  h3={h3}
+                  h4={h4}
+                  p={p}
+                  href={href}
+                  img={img}
+                />
+                <SliderImgItem img={img} />
+              </S.SliderWrap>
+            )
+        )}
     </S.SliderItem>
   );
 };
-
-{
-  /* {!state && (
-        <S.SliderWrap key={slide}>
-          <SliderTextItem
-            // key={data[slide].id}
-            src={data[slide].src}
-            h2={data[slide].h2}
-            h3={data[slide].h3}
-            h4={data[slide].h4}
-            p={data[slide].p}
-            href={data[slide].href}
-          />
-
-          <SliderImgItem img={data[slide].img} />
-        </S.SliderWrap>
-      )} */
-}
