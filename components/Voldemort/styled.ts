@@ -46,7 +46,8 @@ export const Blue = styled.div`
 
   @media (${media.pc}) {
     background: linear-gradient(${colors.blue} 514px, ${colors.white} 275px);
-    padding-right: 100px;
+    padding: 0;
+    padding: 0 50px 0 0;
   }
 `;
 
@@ -307,7 +308,7 @@ export const Red = styled.div`
   }
 
   @media (${media.pc}) {
-    padding-right: 36px;
+    padding: 0;
     background: linear-gradient(to top, ${colors.darkOrange} 423px, ${colors.white} 275px);
   }
 `;

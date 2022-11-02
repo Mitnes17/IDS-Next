@@ -11,7 +11,7 @@ export const Slider = styled.section`
   }
 
   @media (${media.pc}) {
-    padding: 120px 36px 130px 36px;
+    padding: 120px 36px 120px 36px;
   }
 `;
 

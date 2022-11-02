@@ -6,7 +6,8 @@ export const Section = styled.div`
   }
   @media (${media.pc}) {
     position: relative;
-    padding: 0 50px 80px 0;
+    margin-bottom: 80px;
+    /* padding: 0 50px 80px 0; */
   }
 `;
 

@@ -45,7 +45,7 @@ export const Container = styled.div`
   @media (${media.pc}) {
     max-width: 1214px;
     margin-top: 71px;
-    padding: 0 36px 0 85px;
+    padding: 0 0 0 50px;
   }
 `;
 

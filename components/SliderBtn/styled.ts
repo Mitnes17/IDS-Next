@@ -47,6 +47,7 @@ export const Container = styled.div`
   }
 
   @media (${media.tablet}) {
+    margin: 0;
     &::after {
       display: none;
     }

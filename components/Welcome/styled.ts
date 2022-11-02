@@ -21,7 +21,7 @@ export const Container = styled.section`
     max-width: 1215px;
     margin: 0 auto 120px;
     column-gap: 71px;
-    padding: 182px 36px 0px 85px;
+    padding: 182px 0px 0px 50px;
   }
 `;
 

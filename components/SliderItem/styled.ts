@@ -22,7 +22,7 @@ export const SliderWrap = styled.div`
     align-items: center;
     justify-content: space-between;
     max-width: 1218px;
-    margin: 70px auto 50px;
+    margin: 0 auto 0;
   }
 `;
 
@@ -31,7 +31,7 @@ export const BtnWrap = styled.div`
     display: flex;
     justify-content: space-between;
     position: relative;
-
+    margin-bottom: 70px;
     &::after {
       content: '';
       position: absolute;
@@ -46,6 +46,6 @@ export const BtnWrap = styled.div`
 
   @media (${media.pc}) {
     max-width: 1320px;
-    margin: auto;
+    margin: 0 auto 70px;
   }
 `;

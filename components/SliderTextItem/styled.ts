@@ -14,7 +14,8 @@ export const Wrap = styled.div`
     align-items: center;
     justify-content: space-between;
     max-width: 1218px;
-    margin: 70px auto 50px;
+    padding-top: 70px;
+    margin: 0 auto 50px;
   }
 `;
 
