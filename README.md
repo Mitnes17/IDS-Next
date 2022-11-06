@@ -10,6 +10,8 @@ Technology stack:
 
 -TypeScript
 
+You can see it on vercel: https://ids-next-mitnes.vercel.app/
+
 ## Getting Started
 
 First, run the development server:
