@@ -3,6 +3,7 @@ A project with interesting layout and some interactive things.
 Adaptive desing.
 
 Technology stack:
+
 -React
 
 -Styled Components
