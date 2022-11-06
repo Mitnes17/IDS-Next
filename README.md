@@ -4,7 +4,7 @@ Adaptive desing.
 
 Technology stack:
 
--React
+-Next.js (React)
 
 -Styled Components
 
